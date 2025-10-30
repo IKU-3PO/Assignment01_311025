@@ -1,0 +1,14 @@
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\bin\Debug\net9.0\IKU_Assignment01_311025.exe
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\bin\Debug\net9.0\IKU_Assignment01_311025.deps.json
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\bin\Debug\net9.0\IKU_Assignment01_311025.runtimeconfig.json
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\bin\Debug\net9.0\IKU_Assignment01_311025.dll
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\bin\Debug\net9.0\IKU_Assignment01_311025.pdb
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\IKU_Assignment01_311025.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\IKU_Assignment01_311025.AssemblyInfoInputs.cache
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\IKU_Assignment01_311025.AssemblyInfo.cs
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\IKU_Assignment01_311025.csproj.CoreCompileInputs.cache
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\IKU_Assignment01_311025.dll
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\refint\IKU_Assignment01_311025.dll
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\IKU_Assignment01_311025.pdb
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\IKU_Assignment01_311025.genruntimeconfig.cache
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\ref\IKU_Assignment01_311025.dll
