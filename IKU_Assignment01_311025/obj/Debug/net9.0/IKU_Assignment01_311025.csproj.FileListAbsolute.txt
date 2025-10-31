@@ -12,3 +12,4 @@ C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_3
 C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\IKU_Assignment01_311025.pdb
 C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\IKU_Assignment01_311025.genruntimeconfig.cache
 C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\ref\IKU_Assignment01_311025.dll
+C:\Users\Isabella.Krall\RiderProjects\IKU_Assignment01_311025\IKU_Assignment01_311025\obj\Debug\net9.0\IKU_Assignment01_311025.sourcelink.json
