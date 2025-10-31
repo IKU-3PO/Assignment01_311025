@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IKU_Assignment01_311025")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5391031c965e78e288e51ed22dcaa6511c983864")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4c0c2c82407f1fc68d2e9cd6a254614dfcb1c87")]
 [assembly: System.Reflection.AssemblyProductAttribute("IKU_Assignment01_311025")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IKU_Assignment01_311025")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

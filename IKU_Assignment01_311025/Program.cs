@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic; // Woher weiß ich, dass man das nehmen muss?
 
 class Program
 {
