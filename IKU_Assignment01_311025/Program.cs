@@ -4,58 +4,69 @@ class Program
 {
     static void Main()
     {
-        bool keepRunning = true; // necessary to define state for program via data type
-        string history1 = ""; // saving the history for case 1
-        string history2 = ""; // saving the history for case 1
-        string history3 = ""; // saving the history for case 1
-        string history4 = ""; // saving the history for case 1
-        string history5 = ""; // saving the history for case 1
-        int historyCount = 0; // necessary to provide var for counting strings
+        bool keepRunning = true; // Necessary to define state for program via data type
+        string history1 = ""; // Saving the history for case 1
+        string history2 = ""; // Saving the history for case 1
+        string history3 = ""; // Saving the history for case 1
+        string history4 = ""; // Saving the history for case 1
+        string history5 = ""; // Saving the history for case 1
+        int historyCount = 0; // Necessary to provide variable for counting strings
 
-        while (keepRunning)
+        while (keepRunning) // Necessary to ???
+            
         {
-            Console.WriteLine("Scientific Calculator"); // Headline
-            Console.WriteLine(""); // Leerzeichen
+            Console.WriteLine("Welcome to the Scientific Calculator"); // Headline
+            Console.WriteLine(""); // Space
             
-            Console.WriteLine("Menu:"); //Headline
-            Console.WriteLine(""); // Leerzeichen
+            Console.WriteLine("Here we go with the Menu:"); // Menu
+            Console.WriteLine(""); // Space
             
-            Console.WriteLine("1. Basic Operations (+, -, *, /, %)"); // Menu
-            Console.WriteLine(""); // Leerzeichen
+            Console.WriteLine("1. Basic Operations (+, -, *, /, %)"); // Basic Operations
+            Console.WriteLine(""); // Space
             
-            Console.WriteLine("2. Square Root"); // Wurzel
-            Console.WriteLine(""); // Leerzeichen
+            Console.WriteLine("2. Square Root"); // Square root
+            Console.WriteLine(""); // Space
             
-            Console.WriteLine("3. Power (x^y)"); // Quadrat
-            Console.WriteLine(""); // Leerzeichen
+            Console.WriteLine("3. Power (x^y)"); // Power
+            Console.WriteLine(""); // Space
             
             Console.WriteLine("4. View History"); // History
-            Console.WriteLine(""); // Leerzeichen
+            Console.WriteLine(""); // Space
             
-            Console.WriteLine("5. Exit"); // Fertig
-            Console.WriteLine(""); // Leerzeichen
+            Console.WriteLine("5. Exit"); // Finishing line :)
+            Console.WriteLine(""); // Space
             
-            Console.Write("Choose an option: "); // Wählen zwischen Option 1 bis 5
+            Console.Write("Choose one of the options provided: "); // Choose between Option 1 - 5
             string choice = Console.ReadLine();
-            Console.WriteLine(""); // Leerzeichen
-            Console.WriteLine(""); // Leerzeichen
+            Console.WriteLine(""); // Space
+            Console.WriteLine(""); // Space
             
             // ---------------------------------------------
 
-            switch (choice) // statt if/else jetzt switch/case
+            switch (choice) // Using the switch/case/break functionalities per case
             {
-                case "1": // Case 1 ist Basic Calculation
+                case "1": // Case 1 - Basic Calculation
                     Console.Write("Enter the first number: ");
-                    double number1 = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine(""); // Leerzeichen
+                    if (!double.TryParse(Console.ReadLine(), out double number1))
+                    {
+                        Console.WriteLine("Invalid input! Please enter a valid number.");
+                        Console.WriteLine();
+                        continue;
+                    }
+                    Console.WriteLine(""); // Space
                     
                     Console.Write("Enter operation (+, -, *, /, %): ");
                     string operation = Console.ReadLine();
-                    Console.WriteLine(""); // Leerzeichen
+                    Console.WriteLine(""); // Space
                     
                     Console.Write("Enter the second number: ");
-                    double number2 = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine(""); // Leerzeichen
+                    if (!double.TryParse(Console.ReadLine(), out double number2))
+                    {
+                        Console.WriteLine("Invalid input! Please enter a valid number.");
+                        Console.WriteLine();
+                        continue;
+                    }
+                    Console.WriteLine(""); // Space
                     
                     // Data type definition
                     double result = 0; 
@@ -98,13 +109,13 @@ class Program
                             break;
                         
                         default:
-                            Console.WriteLine("Invalid operation!"); // Why do I need that?
-                            continue;
+                            Console.WriteLine("Invalid operation!"); // Necessary when no case applies
+                            continue; // Jumps back to beginning of while (keepRunning)-"Schleife"
                     }
                     
                     // History for Case 1 + Result
                     Console.WriteLine("Result: " + expression);
-                    historyCount++;
+                    historyCount++; // Counts the calculations done so far
                     
                     if (historyCount == 1) history1 = expression;
                     else if (historyCount == 2) history2 = expression;
@@ -122,13 +133,20 @@ class Program
                     case "2": // Case 2 is Square root Calculation
                     Console.Write("Enter a number: "); // Input of Number to be "square rooted"
                     
-                    double number = Convert.ToDouble(Console.ReadLine());
+                    if (!double.TryParse(Console.ReadLine(), out double number))
+                    {
+                        Console.WriteLine("Invalid input! Please enter a valid number.");
+                        Console.WriteLine();
+                        continue;
+                    }
+                    
                     double sqrtResult = Math.Sqrt(number);
                     string sqrtExpression = $"√{number} = {sqrtResult}";
                     
                     // History for Case 2 + Result
                     Console.WriteLine("Result: " + sqrtExpression);
-                    historyCount++;
+                    historyCount++; // Counts the calculations done so far
+                    
                     if (historyCount == 1) history1 = sqrtExpression;
                     else if (historyCount == 2) history2 = sqrtExpression;
                     else if (historyCount == 3) history3 = sqrtExpression;
@@ -143,18 +161,30 @@ class Program
                 // ---------------------------------------------
 
                     case "3": // Case 3 is Power (x^y) Calculation
-                    Console.Write("Enter base: "); // Basis-Zahl eingeben
-                    double baseNum = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine(""); // Leerzeichen
                     
-                    Console.Write("Enter exponent: "); // Quadrat-Zahl eingeben
-                    double exponent = Convert.ToDouble(Console.ReadLine());
+                    Console.Write("Enter base: "); // Enter the base number (x)
+                    if (!double.TryParse(Console.ReadLine(), out double baseNum))
+                    {
+                        Console.WriteLine("Invalid input! Please enter a valid number.");
+                        Console.WriteLine();
+                        continue;
+                    }
+                    
+                    Console.Write("Enter exponent: "); // Enter the exponent number (y)
+                    if (!double.TryParse(Console.ReadLine(), out double exponent))
+                    {
+                        Console.WriteLine("Invalid input! Please enter a valid number.");
+                        Console.WriteLine();
+                        continue;
+                    }
+                    
                     double powerResult = Math.Pow(baseNum, exponent);
                     string powerExpression = $"{baseNum}^{exponent} = {powerResult}";
                     
                     // History for Case 3
                     Console.WriteLine("Result: " + powerExpression);
-                    historyCount++;
+                    historyCount++; // Counts the calculations done so far
+                    
                     if (historyCount == 1) history1 = powerExpression;
                     else if (historyCount == 2) history2 = powerExpression;
                     else if (historyCount == 3) history3 = powerExpression;
@@ -168,8 +198,8 @@ class Program
                 // ---------------------------------------------
 
                     case "4": // Case 4 is Calculation History
-                    Console.WriteLine("Calculation History"); // Überschrift
-                    if (historyCount == 0) // Wenn es noch gar keine Calculations gab
+                    Console.WriteLine("Calculation History"); // Headline
+                    if (historyCount == 0) // Necessary if there were no calculations at all
                     
                     {
                         Console.WriteLine("No calculations yet.");
@@ -185,14 +215,17 @@ class Program
                     
                     Console.WriteLine();
                     break;
-
+            
+                    
+                // ---------------------------------------------
+                    
                     case "5": // Case 5 is Exit
-                    keepRunning = false; // Befehl zum Abschalten
-                    Console.WriteLine("Sänk ju und tschüssel!");
+                    keepRunning = false; // Necessary to stop program
+                    Console.WriteLine("Thank you for using the Scientific Calculator!");
                     break;
 
                     default:
-                    Console.WriteLine("Invalid choice! Please select 1–5.");
+                    Console.WriteLine("Invalid choice! Please select 1–5."); // Necessary if a different number than 1, 2, 3, 4, 5 was entered
                     Console.WriteLine();
                     break;
             }
