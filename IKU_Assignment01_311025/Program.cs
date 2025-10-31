@@ -169,7 +169,7 @@ class Program
                         Console.WriteLine();
                         continue;
                     }
-                    
+                     
                     Console.Write("Enter exponent: "); // Enter the exponent number (y)
                     if (!double.TryParse(Console.ReadLine(), out double exponent))
                     {
