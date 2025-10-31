@@ -55,3 +55,8 @@ Choose on of the options provided:
 - Division by zero is not permitted.
 
 ------------------------------------------------------------------------------------------------------------------------  
+
+## AUTHOR
+IKU-3PO
+DATE: 31st of October 2025
+SESSION: 1 - Professional Programmer Software Engineering 1 (2025)
